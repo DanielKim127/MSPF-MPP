@@ -1,0 +1,40 @@
+data_dir: data/pcqm4m_pretrain/paired
+out_dir: runs/pretrain_2d3d_pcqm4m
+device: auto
+seed: 42
+epochs: 50
+batch_size: 512
+num_workers: 24
+
+cache_shards: 8
+mmap_shards: false
+prefetch_factor: 2
+persistent_workers: true
+lr: 0.00001
+weight_decay: 0.0
+val_fraction: 0.05
+max_steps: 0
+dspgnn:
+  in_dim: 126
+  hidden: 256
+  pe_dim: 128  
+  num_layers: 5
+  num_heads: 4
+  edge_dim: 12
+  dropout: 0.5
+  readout: mean
+schnet:
+  hidden: 256
+  num_layers: 6
+  num_rbf: 64
+  rbf_max: 10.0
+objective:
+  temperature: 0.1
+  mask_ratio: 0.15
+  latent_dim: 128
+  beta: 0.01
+  seeds_per_molecule: 1
+  alpha_global: 1.0
+  alpha_sub: 1.0
+  alpha_rec: 0.05
+  alpha_attr: 1.0
