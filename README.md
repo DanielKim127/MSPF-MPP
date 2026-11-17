@@ -6,6 +6,7 @@ Accurate molecular property prediction is fundamental to computational drug disc
 
 
 <img width="1159" height="823" alt="image" src="https://github.com/user-attachments/assets/c319d659-a6c2-4940-9a2e-a3783e9ef971" />
+<img width="1740" height="499" alt="image" src="https://github.com/user-attachments/assets/91a21c9c-d91c-4a02-b2f2-d460952c9d70" />
 
 
 ## 2. Installation
